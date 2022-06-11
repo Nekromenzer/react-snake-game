@@ -53,3 +53,11 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.pause-animation{
+  width: 150px;
+  height: 150px;
+  background-image: url("../assets/images/game-pause-animation.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

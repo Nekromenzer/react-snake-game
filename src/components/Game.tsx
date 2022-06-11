@@ -23,8 +23,6 @@ const initialState = {
     ]
 }
 
-
-
 class Game extends React.Component {
   state = initialState
 
@@ -160,11 +158,21 @@ class Game extends React.Component {
             </div>
           {
               this.state.play ?
-                <div className={`game-area ${this.state.pause ? "bg-gray-500" : "bg-gray-200"} rounded-lg`}>
-                  <Snake snakeDots={this.state.snakeDots}/>
-                    <Food dot={this.state.food}/>
-                    <InfoScore score={this.state.snakeDots.length - 2} isPause={this.state.pause}  />
-                  </div>
+                <div className={`game-area ${this.state.pause ? "bg-white flex items-center justify-center" : "bg-gray-200"} rounded-lg`}>
+                    <>
+                        {this.state.pause ? (
+                        <div className="flex justify-center flex-col">
+                            <div className="pause-animation"/> 
+                            <span className="text-center mt-2 uppercase text-blue-800 font-bold tracking-wide antialiased font-mono">Game Paused!</span>
+                        </div> ) :(
+                        <>
+                            <Snake snakeDots={this.state.snakeDots}/>
+                            <Food dot={this.state.food}/>
+                            <InfoScore score={this.state.snakeDots.length - 2} isPause={this.state.pause}  />
+                        </>
+                        )}
+                    </>
+                </div>
               :
                 <div className="text-white font-bold flex items-center">
                     {this.state.gameOver}
