@@ -36,11 +36,20 @@ a {
   border-radius: 30%;
 }
 
+.snake-dot-head{
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: rgb(49, 187, 3);
+  border: 1px solid #fff;
+  border-radius: 30%;
+}
+
 .snake-food {
   position: absolute;
   width: 2%;
   height: 2%;
-  background-color: red;
-  border: 1px solid #fff;
-  border-radius: 50%;
+  background-image: url("../assets/images/mango.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
