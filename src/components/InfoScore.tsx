@@ -14,7 +14,7 @@ export default function InfoScore(props: InfoScoreProps) {
         }
     },[bestScore, props.score, setBestScore])
     return (
-        <div className={`${props.isPause ? 'text-yellow-200' : 'text-blue-900'} opacity-50 p-2 flex justify-between`}>
+        <div className={`${props.isPause ? 'text-yellow-500' : 'text-blue-100'} opacity-50 p-2 flex justify-between`}>
             <span className="">Current Score : {props.score}</span>
             <span className="">Best Score : {bestScore}</span>
         </div>
