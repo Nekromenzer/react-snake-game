@@ -21,9 +21,9 @@ a {
 
 .game-area {
   position: relative;
-  margin: 20px auto;
-  width: 500px;
-  height: 500px;
+  margin: 2rem 1rem;
+  width: -webkit-fill-available;
+  height: 25rem;
   border: 2px solid #000;
 }
 
