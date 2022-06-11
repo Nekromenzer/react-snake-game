@@ -166,8 +166,8 @@ class Game extends React.Component {
                             <span className="text-center mt-2 uppercase text-blue-800 font-bold tracking-wide antialiased font-mono">Game Paused!</span>
                         </div> ) :(
                         <>
-                            <Snake snakeDots={this.state.snakeDots}/>
-                            <Food dot={this.state.food}/>
+                            <Snake snakeDots={this.state.snakeDots} />
+                            <Food dot={this.state.food} score={this.state.snakeDots.length - 2}/>
                             <InfoScore score={this.state.snakeDots.length - 2} isPause={this.state.pause}  />
                         </>
                         )}
