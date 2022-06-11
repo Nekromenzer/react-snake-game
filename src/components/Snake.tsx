@@ -1,8 +1,12 @@
+
+
 interface SnakeProps {
     snakeDots:number[][]
 }
 
 export default function Snake(props: SnakeProps) {
+
+
     return (
         <div>
             {props.snakeDots.map((dot, index , row) => {
@@ -11,7 +15,7 @@ export default function Snake(props: SnakeProps) {
                     top: `${dot[1]}%`
                 }
                 return (
-                    <> {index+1 === row.length ? <div className="snake-dot-head" key={index} style={styleDot}/> : <div className="snake-dot" key={index} style={styleDot}/>}</>
+                    <div key={index}> {index+1 === row.length ? <div className="snake-dot-head" key={index} style={styleDot}/> : <div className="snake-dot" key={index} style={styleDot}/>}</div>
                   
                 )
             })}
