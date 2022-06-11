@@ -19,20 +19,29 @@ a {
   box-sizing: border-box;
 }
 
+button {
+  border-style: solid
+}
+
 .game-area {
   position: relative;
   margin: 2rem 1rem;
   width: -webkit-fill-available;
   height: 25rem;
-  /* border: 2px solid #000; */
+  border:2px solid rgb(0, 82, 4);
 }
+
+/* .game-area-bg{
+  background-image: url("../assets/images/board-bg.webp");
+  background-size: cover;
+} */
 
 .snake-dot {
   position: absolute;
   width: 2%;
   height: 2%;
   background-color: #1363DF;
-  border: 1px solid #47B5FF;
+  border: 1px solid #DFF6FF;
   border-radius: 20%;
 }
 
@@ -89,6 +98,14 @@ a {
   width: 20px;
   height: 20px;
   background-image: url("../assets/images/end-game.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game-over{
+  width: 100px;
+  height: 100px;
+  background-image: url("../assets/images/game-over.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

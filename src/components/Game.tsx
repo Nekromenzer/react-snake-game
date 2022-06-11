@@ -158,7 +158,7 @@ class Game extends React.Component {
             </div>
           {
               this.state.play ?
-                <div className={`game-area ${this.state.pause ? "bg-white flex items-center justify-center" : "bg-gray-200 game-area-bg"} rounded-lg`}>
+                <div className={`game-area ${this.state.pause ? "bg-white flex items-center justify-center" : "bg-green-700"} rounded-lg`}>
                     <>
                         {this.state.pause ? (
                         <div className="flex justify-center flex-col">
