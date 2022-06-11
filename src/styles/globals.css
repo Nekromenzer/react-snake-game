@@ -58,7 +58,28 @@ button {
   position: absolute;
   width: 3%;
   height: 3%;
+}
+
+.food-1{
   background-image: url("../assets/images/food/food-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.food-2{
+  background-image: url("../assets/images/food/food-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.food-3{
+  background-image: url("../assets/images/food/food-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.food-4{
+  background-image: url("../assets/images/food/food-4.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
