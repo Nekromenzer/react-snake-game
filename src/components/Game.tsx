@@ -142,18 +142,18 @@ class Game extends React.Component {
   render() {
     return (
       <div style={{width:'inherit'}}>
-          <div className="flex my-2 justify-center">
-                <button className="rounded-md w-32 px-2 py-1 bg-slate-700 text-white" onClick={() => {
+          <div className="flex my-2 justify-center mt-4 gap-4">
+                <button className="rounded-full px-2 w-32 py-1 ring-2 ring-blue-500 text-white flex gap-1 justify-center items-center " onClick={() => {
                     if(this.state.play) {
                         this.setState(initialState);
                     } else this.setState({play: true})
-                }}>{this.state.play ? "End Game" : "Play Game"}</button>
-                {this.state.play ? 
-                    <button className="ml-2 rounded-md w-32 px-2 py-1 bg-slate-700 text-white" onClick={() => {
+                }}><div className={` ${!this.state.play ? "play-game" : "end-game"}`}/>
+                    {this.state.play ? "End Game" : this.state.play ? "Play Game" : "Play Again"}
+                </button>
+                {this.state.play &&
+                    <button className="ml-2 rounded-full w-32 ring-2 ring-blue-500 px-2 py-1 text-white flex gap-1 justify-center items-center" onClick={() => {
                         this.setState({pause: this.state.pause ? false : true})
-                    }}>{this.state.pause ? "Return Game" : "Pause Game"}</button>
-                    :
-                    <></>
+                    }}> <div className={` ${this.state.pause ? "return-game" : "pause-game"}`}/>{this.state.pause ? "Return" : "Pause"}</button>
                 }
             </div>
           {
