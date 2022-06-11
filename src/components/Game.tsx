@@ -142,7 +142,7 @@ class Game extends React.Component {
   render() {
     return (
       <div style={{width:'inherit'}}>
-          <div className="flex my-2 justify-center mt-4 gap-4">
+          <div className={`flex my-2 justify-center mt-4 gap-4 ${!this.state.play && "pt-16"}`}>
                 <button className="rounded-full px-2 w-32 py-1 ring-2 ring-blue-500 text-white flex gap-1 justify-center items-center " onClick={() => {
                     if(this.state.play) {
                         this.setState(initialState);
@@ -158,7 +158,7 @@ class Game extends React.Component {
             </div>
           {
               this.state.play ?
-                <div className={`game-area ${this.state.pause ? "bg-white flex items-center justify-center" : "bg-gray-200"} rounded-lg`}>
+                <div className={`game-area ${this.state.pause ? "bg-white flex items-center justify-center" : "bg-gray-200 game-area-bg"} rounded-lg`}>
                     <>
                         {this.state.pause ? (
                         <div className="flex justify-center flex-col">
@@ -174,7 +174,8 @@ class Game extends React.Component {
                     </>
                 </div>
               :
-                <div className="text-white font-bold flex items-center">
+                <div className="text-white font-bold flex items-center justify-center gap-3 flex-col">
+                    <div className="game-over"/>
                     {this.state.gameOver}
                 </div>
           }
