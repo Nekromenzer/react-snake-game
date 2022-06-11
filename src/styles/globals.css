@@ -38,8 +38,8 @@ button {
 
 .snake-dot {
   position: absolute;
-  width: 2%;
-  height: 2%;
+  width: 3%;
+  height: 3%;
   background-color: #1363DF;
   border: 1px solid #DFF6FF;
   border-radius: 20%;
@@ -47,8 +47,8 @@ button {
 
 .snake-dot-head{
   position: absolute;
-  width: 2%;
-  height: 2%;
+  width: 3%;
+  height: 3%;
   background-color: #06283D;
   border: 1px solid #DFF6FF;
   border-radius: 20%;
@@ -56,9 +56,9 @@ button {
 
 .snake-food {
   position: absolute;
-  width: 2%;
-  height: 2%;
-  background-image: url("../assets/images/mango.png");
+  width: 3%;
+  height: 3%;
+  background-image: url("../assets/images/food/food-1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
