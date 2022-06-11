@@ -136,7 +136,7 @@ class Game extends React.Component {
 
   onGameOver() {
         this.setState(initialState);
-        this.setState({gameOver: `Game Over! Your Score was ${this.state.snakeDots.length} Try Again`})
+        this.setState({gameOver: `Game Over! Your Score was ${this.state.snakeDots.length - 2 } Try Again`})
     }
 
   render() {
@@ -148,7 +148,7 @@ class Game extends React.Component {
                         this.setState(initialState);
                     } else this.setState({play: true})
                 }}><div className={` ${!this.state.play ? "play-game" : "end-game"}`}/>
-                    {this.state.play ? "End Game" : this.state.play ? "Play Game" : "Play Again"}
+                    {this.state.play ? "End Game" : "Play Game" }
                 </button>
                 {this.state.play &&
                     <button className="ml-2 rounded-full w-32 ring-2 ring-blue-500 px-2 py-1 text-white flex gap-1 justify-center items-center" onClick={() => {
@@ -175,7 +175,7 @@ class Game extends React.Component {
                 </div>
               :
                 <div className="text-white font-bold flex items-center justify-center gap-3 flex-col">
-                    <div className="game-over"/>
+                    {this.state.gameOver ? <div className="game-over"/> : "" }
                     {this.state.gameOver}
                 </div>
           }
