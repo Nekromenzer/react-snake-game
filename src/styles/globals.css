@@ -61,3 +61,34 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.return-game{
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/images/play-game.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pause-game{
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/images/pause-game.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.play-game{
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/images/play-game.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.end-game{
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/images/end-game.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
